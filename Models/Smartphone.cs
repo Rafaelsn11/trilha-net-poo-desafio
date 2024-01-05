@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 public abstract class Smartphone
 {
-        
+        // Implementado!!!
         public string Numero { get; set; }
         private string Modelo;
         private string IMEI;

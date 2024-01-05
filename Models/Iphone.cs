@@ -12,7 +12,8 @@ namespace trilha_net_poo_desafio.Models
         {
 
         }
-        // TODO: Sobrescrever o método "InstalarAplicativo"
+        
+        // Implementado!!!
         public override void InstalarAplicativo(string nomeApp)
         {
             Console.WriteLine($"Instalando o aplicativo {nomeApp} no smartphone no Iphone.");
