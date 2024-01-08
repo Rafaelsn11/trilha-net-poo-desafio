@@ -10,6 +10,7 @@ public abstract class Smartphone
         private string Modelo;
         private string IMEI;
         private int Memoria;
+        protected int[] ContagemDaInstalacao = {20, 40, 60, 80, 100};
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
@@ -23,11 +24,27 @@ public abstract class Smartphone
         public void Ligar()
         {
             Console.WriteLine("Ligando...");
+            
+            for (int contador = 1; contador <= 3; contador++)
+            {
+                Console.WriteLine("...");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("\nLigação Atendida");
+            Thread.Sleep(1000);
         }
 
         public void ReceberLigacao()
         {
             Console.WriteLine("Recebendo ligação...");
+            
+            for (int contador = 1; contador <= 3; contador++)
+            {
+                Console.WriteLine("...");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("\nLigação Recebida");
+            Thread.Sleep(1000);
         }
 
         public abstract void InstalarAplicativo(string nomeApp);

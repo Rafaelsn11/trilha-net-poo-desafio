@@ -17,6 +17,13 @@ namespace trilha_net_poo_desafio.Models
         public override void InstalarAplicativo(string nomeApp)
         {
             Console.WriteLine($"Instalando o aplicativo {nomeApp} no smartphone no Nokia");
+            Console.WriteLine("Carregando...");
+            for (int contador = 0; contador < ContagemDaInstalacao.Length; contador++)
+            {
+                Console.WriteLine($"{ContagemDaInstalacao[contador]}%...");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Instalação Concluída");
         }
     }
 }
